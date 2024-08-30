@@ -1,0 +1,4 @@
+host name 	: db
+port		: 5432
+username	: postgres
+password	: admin
