@@ -1,6 +1,4 @@
 const taskRepository = require('../repositories/taskRepository');
-const express = require('express');
-const router = express.Router();
 
 class TaskService {
     async createTask(task) {
@@ -20,7 +18,7 @@ class TaskService {
     }
 
     async deleteTask(id) {
-        return await taskRepository.destroy(id);
+        return await taskRepository.delete(id);
     }
 }
 
